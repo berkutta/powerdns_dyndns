@@ -10,7 +10,19 @@ This is a simple Tool to get a DynDNS compatible API for your PowerDNS DNS Syste
 
 ## DynDNS Mode
 
-This picture shows the example configuration on an EdgeRouter Firewall
+This shows the example configuration on an EdgeRouter Firewall
+
+CLI:
+
+```
+set service dns dynamic interface eth0 service custom-powerdns host-name mydomain
+set service dns dynamic interface eth0 service custom-powerdns login mylogin
+set service dns dynamic interface eth0 service custom-powerdns password mypassword
+set service dns dynamic interface eth0 service custom-powerdns protocol dyndns2
+set service dns dynamic interface eth0 service custom-powerdns server myserver/dyndns
+```
+
+GUI:
 
 ![configuration example](https://raw.githubusercontent.com/berkutta/powerdns_dyndns/master/edgemax.png)
 
